@@ -1,0 +1,24 @@
+<div class="banner mb-4">
+  <div class="container text-center">
+    <h1>Cocktails Galore Bitches.</h1>
+    <p>Awwwwwwwwww yeah.</p>
+  </div>
+</div>
+  <div class="cocktail-grid">
+    <% @cocktails.each do |cocktail| %>
+      <div class="card-product mb-4">
+        <%= link_to cocktail_path(cocktail) do %>
+        <%= image_tag "moscow.jpg", alt: "Le Wagon", width: 200 %>
+        <div class="card-product-infos">
+          <h2><%= link_to cocktail.name, cocktail_path(cocktail), class: "title-link" %></h2>
+          <p><%= cocktail.description %></p>
+        </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+<div class="container mx-auto d-flex justify-content-center mb-4">
+  <%= link_to "Add New Cocktail", new_cocktail_path, class: "btn btn-green" %>
+</div>
+
+

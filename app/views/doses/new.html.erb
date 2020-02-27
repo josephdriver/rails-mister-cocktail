@@ -1,0 +1,24 @@
+<div class="banner">
+  <h1>Doses#new</h1>
+</div>
+
+<div class="container">
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+<%= f.association :ingredient %>
+<%= f.input :description %>
+<%= f.submit %>
+<% end %>
+</div>
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.btn {
+  color:white;
+  font-weight:bold;
+  text-decoration:none;
+  text-align: center;
+  display:inline-block;
+  padding:8px 16px;
+  border-radius:50px;
+  background-color: blue;
+  transition: 0.2s;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.btn-green {
+  color:white;
+  background-color:#40BFC1;
+  transition: 0.2s;
+  &:hover {
+  text-decoration:none;
+  color:white;
+  background-color:#1AA8A8;
+  }
+}

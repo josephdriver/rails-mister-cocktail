@@ -1,0 +1,10 @@
+.main-content {
+  min-height: calc(100vh - 75px);
+}
+
+.cocktail-grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:30px;
+  padding:0px 200px;
+}
