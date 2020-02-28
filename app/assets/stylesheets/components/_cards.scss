@@ -37,11 +37,11 @@
   padding: 16px;
 }
 
-.title-link {
-  color:black;
+.no-dec {
   text-decoration:none;
+  color:black;
   &:hover {
-  color:black;
-  text-decoration:none;
+    text-decoration:none;
+    color:black;
   }
 }

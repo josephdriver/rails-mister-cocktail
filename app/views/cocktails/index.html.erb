@@ -4,21 +4,19 @@
     <p>Awwwwwwwwww yeah.</p>
   </div>
 </div>
-  <div class="cocktail-grid">
+  <div class="card-grid">
     <% @cocktails.each do |cocktail| %>
-      <div class="card-product mb-4">
-        <%= link_to cocktail_path(cocktail) do %>
-        <%= image_tag "moscow.jpg", alt: "Le Wagon", width: 200 %>
-        <div class="card-product-infos">
-          <h2><%= link_to cocktail.name, cocktail_path(cocktail), class: "title-link" %></h2>
+        <%= link_to cocktail_path(cocktail), class: "no-dec" do %>
+        <div class="card-product mb-4">
+          <%= image_tag "moscow.jpg", alt: "Le Wagon", width: 200 %>
+          <div class="card-product-infos">
+          <h2><%= cocktail.name %></h2>
           <p><%= cocktail.description %></p>
         </div>
-        <% end %>
       </div>
+        <% end %>
     <% end %>
   </div>
 <div class="container mx-auto d-flex justify-content-center mb-4">
-  <%= link_to "Add New Cocktail", new_cocktail_path, class: "btn btn-green" %>
+  <%= link_to "Add New Cocktail", new_cocktail_path, class: "btn-base btn-green" %>
 </div>
-
-

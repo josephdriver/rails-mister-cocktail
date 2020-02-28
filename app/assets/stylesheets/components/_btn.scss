@@ -1,5 +1,6 @@
-.btn {
+.btn-base {
   color:white;
+  border-width:0;
   font-weight:bold;
   text-decoration:none;
   text-align: center;
@@ -19,5 +20,16 @@
   text-decoration:none;
   color:white;
   background-color:#1AA8A8;
+  }
+}
+
+.btn-red {
+  color:white;
+  background-color:#FF6F5E;
+  transition: 0.2s;
+  &:hover {
+  text-decoration:none;
+  color:white;
+  background-color:#ce1c0c;
   }
 }
