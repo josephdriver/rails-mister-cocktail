@@ -1,14 +1,14 @@
-<div class="banner mb-4">
+<div class="banner banner-home">
   <div class="container text-center">
     <h1>Cocktails Galore Bitches.</h1>
     <p>Awwwwwwwwww yeah.</p>
   </div>
 </div>
-  <div class="card-grid">
+  <div class="card-grid lg-margin-top">
     <% @cocktails.each do |cocktail| %>
         <%= link_to cocktail_path(cocktail), class: "no-dec" do %>
         <div class="card-product mb-4">
-          <%= image_tag "moscow.jpg", alt: "Le Wagon", width: 200 %>
+          <%= cl_image_tag cocktail.photos[2].key, width: 200 %>
           <div class="card-product-infos">
           <h2><%= cocktail.name %></h2>
           <p><%= cocktail.description %></p>

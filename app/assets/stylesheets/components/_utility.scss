@@ -9,19 +9,25 @@ h3 {
   min-height: calc(100vh - 75px);
 }
 
-.lg-margin {
+.large-margin-top {
   margin-top:100px;
 }
 
+.large-margin-bottom {
+  margin-bootom:100px;
+}
+
 .description {
+  border-radius:10px;
   align-items:center;
   border-radius:4px;
   width:45%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .ingredient-list {
+  padding-right:30px;
   border-radius:10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
   width:30%;
 }
 
@@ -55,4 +61,18 @@ h3 {
   grid-template-columns: 1fr 1fr;
   grid-gap:30px;
   padding:0px 200px;
+}
+
+.cocktail-info {
+  border-radius:15px;
+  display:flex;
+  justify-content:space-between;
+  width:800px;
+  height:400px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.slides {
+  width:500px;
 }

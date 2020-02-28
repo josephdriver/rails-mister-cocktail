@@ -3,9 +3,9 @@
   justify-content:center;
   align-items:center;
   height:400px;
-  background-image: radial-gradient(circle, rgba(63,94,251,0.1) 0%, rgba(0,0,0,0.9) 100%), asset_url('beverages.jpg');
   background-size:cover;
   background-position:center;
+  margin-bottom:100px;
     h1 {
     font-size:60px;
     color:white;
@@ -15,5 +15,9 @@
     color:white;
     font-size:30px;
     text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  }
+  &.banner-home{
+      background-image: radial-gradient(circle, rgba(63,94,251,0.1) 0%, rgba(0,0,0,0.9) 100%), url('https://res.cloudinary.com/dppvhwque/image/upload/c_scale,w_1556/v1582877218/alcoholic-beverages-bar-beverage-cocktail-605408_e0qwxc.jpg');
+
   }
 }
